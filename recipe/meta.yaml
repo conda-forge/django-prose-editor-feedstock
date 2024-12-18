@@ -1,6 +1,6 @@
 {% set name = "django-prose-editor" %}
 {% set version = "0.10.1" %}
-{% python_min = "3.10" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
