@@ -1,6 +1,7 @@
 {% set python_min = '3.11' %}
 {% set name = "django-prose-editor" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.1" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_prose_editor-{{ version }}.tar.gz
-  sha256: 6a21752f3dc6a1c796a352aef5d9398433cba722209633089e6d10f767a16013
+  sha256: 934db4f466a5889ea6beb57a88714ba096189a64787ac9438759a38d83162211
 
 build:
   noarch: python
@@ -23,7 +24,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - django >=4.2
-    - django-js-asset
+    - django-js-asset >=3
 
 test:
   imports:
