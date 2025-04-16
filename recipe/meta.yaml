@@ -24,7 +24,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - django >=4.2
-    - django-js-asset >=3.0.1
+    - django-js-asset >=3.1.2
 
 test:
   imports:
