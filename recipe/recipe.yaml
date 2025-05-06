@@ -3,7 +3,7 @@ schema_version: 1
 context:
   python_min: '3.10'
   name: django-prose-editor
-  version: "0.11.3"
+  version: "0.11.4"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/django_prose_editor-${{ version }}.tar.gz
-  sha256: 0fd484636c71d4e87b13bd05be1538112ece8f3daef77c4e7fb58b4ecb5ec28a
+  sha256: 1684a2624ff2851621a3bcab0e3bb6517509546a104d295d5dd4a33ea16ef218
 
 build:
   number: 0
