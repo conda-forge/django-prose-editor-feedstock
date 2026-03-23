@@ -32,7 +32,9 @@ tests:
       imports:
         - django_prose_editor
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Prose editor for the Django admin based on ProseMirror
